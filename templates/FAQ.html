@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Про команду Pixel Pirates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(to right, #1a1a40, #1f4068);
+            color: cyan;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: cyan;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        /* Ховер ефект */
+        .hover-section {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .hover-section:hover {
+            border-color: #FFD700;
+            box-shadow: 0 0 30px #F19CBB;
+            transform: translateY(-5px);
+            border-radius: 30px;
+        }
+        .hover-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            opacity: 0;
+        }
+        .hover-section:hover .hover-details {
+            max-height: 500px;
+            opacity: 1;
+        }
+        h2 {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: cyan;
+            font-size: 20px;
+            margin: 15px 0 10px 0;
+        }
+
+        .price {
+            color: #FFD700;
+            font-weight: bold;
+        }
+    </style>
+    {% include 'navbar.html' %}
+
+</head>
+<body>
+
+    <div class="pricing-selection hover-section">
+        <h2>1. Які послуги ви надаєте?</h2>
+        <div class="hover-details">
+            <p>Telegram боти (від простих команд до інтеграції з API, оплатою та базами даних).</p>
+            <p>Скрипти для автоматизації (парсинг даних, робота з Excel/Google Таблицями, обробка файлів).</p>
+            <p>Допрацювання та виправлення готових проектів.</p>
+        </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>2. Які технології ви використовуєте?</h2>
+            <div class="hover-details">
+                <p>Для ботів: Python (Aiogram, Telebot), Node.js (Telegraf), PHP.</p>
+                <p>Для скриптів: Python (BeautifulSoup, Selenium), Bash, JavaScript.</p>
+                <p>Бази даних: SQLite, PostgreSQL, MySQL (якщо потрібно).</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>3.  Як відбувається оплата?</h2>
+            <div class="hover-details">
+                <p>50% перед початком роботи, 50% — після завершення.</p>
+                <p>Оплата через PayPal, Wise, Revolut, банківський переказ (для України).</p>
+                <p>Криптовалюта (USDT, BTC) — можна обговорити.</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>4.  Який термін виконання?</h2>
+            <div class="hover-details">
+                <p>Прості боти/скрипти — 1–3 дні.</p>
+                <p>Складні проекти — до 2 тижнів.</p>
+                <p>Термін може змінитись, якщо виникають додаткові побажання.</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>5.  Чи можна доробити або виправити помилки після здачі проекту?</h2>
+            <div class="hover-details">
+                <p>Так, перші 7 днів — безкоштовні виправлення (якщо це не новий функціонал).</p>
+                <p>Після цього — $20–50/год за доопрацювання.</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>6.  Чи можна замовити хостинг для бота?</h2>
+            <div class="hover-details">
+                <p>Так, можу: Налаштувати бота на VPS (DigitalOcean, AWS).</p>
+                <p>Допомогти з безкоштовним хостингом (Heroku, Replit — якщо підходить). Ціна: від $50 (залежить від сервера).</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>7.  Чи є у вас готові роботи для прикладу?</h2>
+            <div class="hover-details">
+                <p>Так, можу показати: Приклади бота для замовлень, чат-підтримки, парсингу.</p>
+                <p>Скрипти для автоматизації. (Пишіть — скину посилання або код у приватному порядку).</p>
+            </div>
+    </div>
+
+    <div class="pricing-selection hover-section">
+        <h2>8.  Чому варто обрати саме вас?</h2>
+            <div class="hover-details">
+                <p>Ціна нижча, ніж у середнього фрілансера.</p>
+                <p>Швидка комунікація (відповідаю протягом 1–2 годин).</p>
+                <p>Гарантія якості — код завжди коментую, щоб було зрозуміло.</p>
+            </div>
+    </div>
+
+</body>
+</html>

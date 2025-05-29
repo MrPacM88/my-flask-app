@@ -1,0 +1,153 @@
+/* ===============================
+   # Основне оформлення сторінки
+   =============================== */
+
+body {
+    background: linear-gradient(to right, #1a1a40, #1f4068);
+    color: #00F5FF;
+    font-family: Orbitron;
+    text-align: center;
+    padding: 2rem;
+    text-shadow: 0 0 0px #FF00AA;
+}
+
+.header-logo {
+    width: 350px;
+    height: auto;
+    margin-left: 1.5rem;
+    filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.7));
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ===============================
+   # Кнопки (загальні)
+   =============================== */
+
+button {
+    background-color: #FFD700;
+    color: Black;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 15px #F19CBB;
+}
+
+
+/* ===============================
+   # Навігація (navbar)
+   =============================== */
+
+nav, .navbar {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-button {
+    background-color: #FFDD00;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #F19CBB;
+}
+
+
+/* ===============================
+   # Форма замовлення
+   =============================== */
+
+.form-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    color: white;
+}
+
+input, textarea {
+    padding: 10px;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #FFD700;
+    color: black;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.order-form button {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   # Повідомлення (alert)
+   =============================== */
+
+.alert {
+  background-color: #ffd700;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}

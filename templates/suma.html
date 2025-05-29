@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Price Pixel Pirates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(to right, #1a1a40, #1f4068);
+            color: cyan;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: cyan;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .pricing-selection {
+            margin: auto;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #F19CBB;
+            margin-bottom: 20px;
+        }
+        /* Ховер ефект */
+        .hover-section {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .hover-section:hover {
+            border-color: #FFD700;
+            box-shadow: 0 0 30px #F19CBB;
+            transform: translateY(-5px);
+            border-radius: 30px;
+        }
+        .hover-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            opacity: 0;
+        }
+        .hover-section:hover .hover-details {
+            max-height: 500px;
+            opacity: 1;
+        }
+        h2 {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: cyan;
+            font-size: 20px;
+            margin: 15px 0 10px 0;
+        }
+
+        .price {
+            color: #FFD700;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Price</h1>
+
+    <!-- Telegram секція з ховер ефектом -->
+    <div class="pricing-section hover-section">
+        <h2>Telegram</h2>
+        <div class="hover-details">
+            <h3>1. Прості Telegram боти</h3>
+            <p>Базовий бот (обробка команд, відправка повідомлень) – <span class="price">$50–$150</span></p>
+            <p>Бот з простим API (наприклад, курс валют, погода) – <span class="price">$150–$300</span></p>
+            <p>Бот з базовою адмінкою (кнопки, меню, збереження даних у JSON/SQLite) – <span class="price">$200–$400</span></p>
+
+            <h3>2. Складні Telegram боти</h3>
+            <p>Бот з оплатою (Stripe, PayPal, LiqPay) – <span class="price">$300–$600</span></p>
+            <p>Бот з базою даних (PostgreSQL, MySQL) – <span class="price">$400–$800</span></p>
+            <p>Бот з AI (ChatGPT, класифікація текстів) – <span class="price">$500–$1000+</span></p>
+        </div>
+    </div>
+
+    <!-- Web секція з ховер ефектом -->
+    <div class="pricing-section hover-section">
+        <h2>Web</h2>
+        <div class="hover-details">
+            <p>Лендінг пейдж – <span class="price">$200–$500</span></p>
+            <p>Корпоративний сайт – <span class="price">$500–$1500</span></p>
+            <p>Інтернет-магазин – <span class="price">$1000–$3000</span></p>
+            <p>Web додаток – <span class="price">$1500–$5000+</span></p>
+        </div>
+    </div>
+
+    <!-- Scripts секція з ховер ефектом -->
+    <div class="pricing-section hover-section">
+        <h2>Scripts</h2>
+        <div class="hover-details">
+            <p>Парсинг даних – <span class="price">$100–$400</span></p>
+            <p>Автоматизація задач – <span class="price">$200–$600</span></p>
+            <p>API інтеграція – <span class="price">$150–$500</span></p>
+            <p>Desktop додаток – <span class="price">$300–$1000</span></p>
+        </div>
+    </div>
+
+</body>
+</html>
